@@ -15,32 +15,34 @@ A program to manage users as service accounts to a kubernetes cluster
          - admin (Namespace admin) [build-in]
          - user (Read only access) [build-in]
          - release-manager(Read only access,but can delete pods) [custom]
-   	     - deployer(Can do deployments, cicd oriented) [custom]
+	 - deployer(Can do deployments, cicd oriented) [custom]
     
     Usage:
 
         Create a normal user named "john" to a namespace named "doe":
-        - ./k8s_users_beta.sh create john doe user 
+        - ./k8s-users.sh create john doe user 
 
         Create an admin user named "john" to a namespace named "doe":
-        - ./k8s_users_beta.sh create john doe admin
+        - ./k8s-users.sh create john doe admin
                 
         Create a release-manager user named "john" to a namespace named "doe":
-        - ./k8s_users_beta.sh create john doe release-manager
+        - ./k8s-users.sh create john doe release-manager
 
         Create a deploy user name "john" to a namespace  named "doe":
-        - ./k8s_users_beta.sh create john doe deployer
+        - ./k8s-users.sh create john doe deployer
 
         You can also create a user named "john" which has access to multiple namespaces passing
         the extra namespaces as arguments at the end.
-        - ./k8s_users_beta.sh create john namespace1 user namespace2 namespace3
+        - ./k8s-users.sh create john namespace1 user namespace2 namespace3
 
         Create a cluster admin user named "john" namespace is not actualy used but needed to be there so "doe":
-        - ./k8s_users_beta.sh create john doe k8scadmin 
+        - ./k8s-users.sh create john doe k8scadmin 
 
         To delete a user named "john" to a namespace named "doe":
-        - ./k8s_users_beta.sh delete john doe
+        - ./k8s-users.sh delete john doe
 
         You can also create user config file for existing user "john" of namespace "doe" as:
-        - ./k8s_users_beta.sh config john doe
+        - ./k8s-users.sh config john doe
 
+## BEWARE
+Some roles you have to create them by your self
