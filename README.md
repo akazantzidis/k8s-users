@@ -44,5 +44,5 @@ A program to manage users as service accounts to a kubernetes cluster
         You can also create user config file for existing user "john" of namespace "doe" as:
         - ./k8s-users.sh config john doe
 
-## BEWARE
-Some roles you have to create them by your self
+# BEWARE
+Some roles you have to create them by your self on your cluster
