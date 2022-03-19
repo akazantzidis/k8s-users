@@ -1,10 +1,10 @@
 # k8s-users
-A program to manage users as service accounts to a kubernetes cluster
+A script to manage users as service accounts to a kubernetes cluster
 
 
     Description:
 
-        With this program you can easily create user accounts to a kubernetes cluster.
+        With this script you can easily create user accounts to a kubernetes cluster.
         Pre-requests are:
          - kubectl tool installed with admin account configured.
 
